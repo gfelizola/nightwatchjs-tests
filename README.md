@@ -1,7 +1,9 @@
 # Nightwatch tests
 
 before run the tests:
-`npm install -g nightwatch`
+```
+npm install -g nightwatch
+```
 
 then
 
