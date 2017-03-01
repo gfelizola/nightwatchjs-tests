@@ -1,6 +1,4 @@
 module.exports = {
-    '@disable': false,
-    '@tags': ['login'],
     'Login to testuser.ml.com' : function (browser) {
         browser
             .url('http://testuser.ml.com')

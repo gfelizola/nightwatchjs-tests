@@ -10,5 +10,5 @@ then
 ```
 git clone git@github.com:gfelizola/nightwatchjs-tests.git
 npm i
-nightwatch
+npm test
 ```

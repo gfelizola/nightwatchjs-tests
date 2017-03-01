@@ -3,7 +3,7 @@
         "tests"
     ],
     "output_folder" : "reports",
-    "globals_path"  : "tests/_globals.js",
+    "globals_path"  : "",
 
     "selenium" : {
         "start_process" : true,
@@ -18,7 +18,7 @@
 
     "test_settings" : {
         "default" : {
-            "launch_url"          : "http://localhost:3030",
+            "launch_url"          : "https://app.mercadobackoffice.com/stage/",
             "selenium_port"       : 4444,
             "selenium_host"       : "localhost",
             "silent"              : true,
