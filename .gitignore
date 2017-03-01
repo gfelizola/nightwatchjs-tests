@@ -1,0 +1,3 @@
+reports/*.xml
+node_modules
+logs
