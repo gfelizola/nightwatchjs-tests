@@ -1,0 +1,46 @@
+{
+    "src_folders"   : [
+        "tests"
+    ],
+    "output_folder" : "reports",
+    "globals_path"  : "tests/_globals.js",
+
+    "selenium" : {
+        "start_process" : true,
+        "server_path"   : "./bin/selenium-server.jar",
+        "log_path"      : "logs",
+        "port"          : 4444,
+        "cli_args"      : {
+            "webdriver.chrome.driver" : "./bin/chromedriver",
+            "webdriver.gecko.driver" : "./bin/geckodriver"
+        }
+    },
+
+    "test_settings" : {
+        "default" : {
+            "launch_url"          : "http://localhost:3030",
+            "selenium_port"       : 4444,
+            "selenium_host"       : "localhost",
+            "silent"              : true,
+            "desiredCapabilities" : {
+                "browserName"     : "chrome",
+                "chromeOptions": {
+                    "args": ["--test-type","--window-size=1200,800"]
+                },
+                "acceptSslCerts"  : false
+            }
+        },
+
+        "stage" : {
+            "launch_url" : "https://app.mercadobackoffice.com/stage/"
+        },
+
+        "hotfix" : {
+            "launch_url" : "https://app.mercadobackoffice.com/hotfix/"
+        },
+
+        "production" : {
+            "launch_url" : "https://app.mercadobackoffice.com/"
+        }
+    }
+}
