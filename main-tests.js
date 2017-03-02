@@ -4,7 +4,9 @@ var meliLogin = require('./tests/meli-login');
 var mbeOpen = require('./tests/mbe-open');
 
 module.exports = {
-    'Create app account from testuser' : function (browser) {
+    'Create app account with testuser' : function (browser) {
+
+        browser.windowMaximize('current');
 
         // 1) criar usuário de teste sem anúncios
         testuserLogin(browser);
@@ -24,9 +26,9 @@ module.exports = {
         // TODO
 
 
-        //finaliza os testes
+        // finaliza os testes
         // se manter a linha abaixo comentada, a sessão do navegador será mantida
-        browser.end();
+        // browser.end();
 
 
     }

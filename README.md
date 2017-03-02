@@ -3,6 +3,9 @@
 before run the tests:
 ```
 npm install -g nightwatch
+
+export MELI_USER=<sentinel_user>
+export MELI_PASS=<sentinel_password>
 ```
 
 then
